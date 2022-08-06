@@ -35,5 +35,12 @@ public class LandingPage {
 	{
 		return driver.findElement(register);
 	}
+	
+	@FindBy (xpath="//a[contains(text(),'Specials')]")
+	WebElement special;
+	public WebElement special()
+	{
+		return special;
+	}
 
 }

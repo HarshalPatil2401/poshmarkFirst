@@ -11,7 +11,7 @@ public class ExtendsReports {
 		
 		String extentReportPath = System.getProperty("user.dir")+"\\reports\\extentreport.html";
 		ExtentSparkReporter reporter = new ExtentSparkReporter(extentReportPath);
-		reporter.config().setReportName("TutorialsNinja Automation Results");
+		reporter.config().setReportName( "Automation Results");
 		reporter.config().setDocumentTitle("Test Results");
 		
 		extentReport = new ExtentReports();
