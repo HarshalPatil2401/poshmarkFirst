@@ -35,5 +35,40 @@ public class LandingPage {
 	{
 		return driver.findElement(register);
 	}
+	
+	@FindBy (xpath="//a[contains(text(),'Specials')]")
+	WebElement special;
+	public WebElement special()
+	{
+		return special;
+	}
+	
+	@FindBy(xpath="//body/div[1]/nav[1]/div[2]/ul[1]/li[1]/a[1]")
+	private WebElement desktops;
+	public WebElement desktop()
+	{
+		return desktops;
+	}
+	
+	@FindBy(xpath="//a[contains(text(),'Mac (1)')]")
+	WebElement mac;
+	public WebElement product1()
+	{
+		return mac;
+	}
+	
+	@FindBy(xpath="//a[contains(text(),'iMac')]")
+	WebElement product1click;
+	public WebElement mac()
+	{
+		return product1click;
+	}
+	
+	@FindBy(xpath="(//*[@title=\"iMac\"])[1]")
+	WebElement verify;
+	public WebElement verify()
+	{
+		return verify;
+	}
 
 }
